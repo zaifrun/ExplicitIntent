@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\makn\\AndroidStudioProjects\\course2016\\ExplicitIntent\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_a.xml",
+        "source": "C:\\Users\\makn\\AndroidStudioProjects\\course2016\\ExplicitIntent\\app\\src\\main\\res\\layout\\activity_a.xml"
+    },
+    {
+        "merged": "C:\\Users\\makn\\AndroidStudioProjects\\course2016\\ExplicitIntent\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_b.xml",
+        "source": "C:\\Users\\makn\\AndroidStudioProjects\\course2016\\ExplicitIntent\\app\\src\\main\\res\\layout\\activity_b.xml"
+    }
+]
