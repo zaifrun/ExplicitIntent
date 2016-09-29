@@ -6,8 +6,8 @@ android {
 
     defaultConfig {
         applicationId "com.example.explicitintent"
-        minSdkVersion 18
-        targetSdkVersion 18
+        minSdkVersion 16
+        targetSdkVersion 23
     }
 
     buildTypes {

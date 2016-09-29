@@ -8,6 +8,7 @@ import android.widget.TextView;
 import android.widget.EditText;
 
 public class ActivityB extends Activity {
+
 	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_b);
@@ -33,10 +34,8 @@ public class ActivityB extends Activity {
 		Intent data = new Intent();
 		
 		EditText editText1 = (EditText) findViewById(R.id.editText1);
-		
 		String returnString = editText1.getText().toString();
 		data.putExtra("returnData", returnString);
-	
 		setResult(RESULT_OK, data);
 		super.finish();
 	}

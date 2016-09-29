@@ -30,10 +30,8 @@ public class ActivityA extends Activity {
 		                     (resultCode == RESULT_OK)) {
 				
 				TextView textView1 = (TextView) findViewById(R.id.textView1);
-					
 				String returnString = 
 		                     data.getExtras().getString("returnData");
-					
 				textView1.setText(returnString);	
 		}
 	}
@@ -41,12 +39,12 @@ public class ActivityA extends Activity {
 	
     public void onClick(View view) {
     	
-    	Intent i = new Intent(this, ActivityB.class);   	
+		//startActivity(i);
     	//if we want the result then we need the four last
     	//lines, but if we do not care about the result
     	//we can use one line of code:
-    	//startActivity(i);
-    	final EditText editText1 = (EditText)  
+		Intent i = new Intent(this, ActivityB.class);
+		final EditText editText1 = (EditText)
                     findViewById(R.id.editText1);
     	String myString = editText1.getText().toString();
     	i.putExtra("qString", myString);
