@@ -20,9 +20,8 @@ public class ActivityB extends Activity {
 		
 		String qString = extras.getString("qString");
 		
-		final TextView textView = (TextView) 
-                findViewById(R.id.textView1);		
-		textView.setText(qString);	
+		TextView textView = findViewById(R.id.textView1);
+		textView.setText(qString);
     }
 	
 	public void onClick(View view) {
@@ -33,7 +32,7 @@ public class ActivityB extends Activity {
 	public void finish() {
 		Intent data = new Intent();
 		
-		EditText editText1 = (EditText) findViewById(R.id.editText1);
+		EditText editText1 =findViewById(R.id.editText1);
 		String returnString = editText1.getText().toString();
 		data.putExtra("returnData", returnString);
 		setResult(RESULT_OK, data);

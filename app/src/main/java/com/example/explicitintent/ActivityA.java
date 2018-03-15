@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class ActivityA extends Activity {
 
-	private static final int request_code = 5;
+	private static final int REQUEST_CODE = 5;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -26,10 +26,11 @@ public class ActivityA extends Activity {
 	}
 	
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		if ((requestCode == request_code) && 
-		                     (resultCode == RESULT_OK)) {
+		if ((requestCode == REQUEST_CODE) &&
+		                     (resultCode == RESULT_OK))
+		{
 				
-				TextView textView1 = (TextView) findViewById(R.id.textView1);
+				TextView textView1 = findViewById(R.id.textView1);
 				String returnString = 
 		                     data.getExtras().getString("returnData");
 				textView1.setText(returnString);	
@@ -44,10 +45,9 @@ public class ActivityA extends Activity {
     	//lines, but if we do not care about the result
     	//we can use one line of code:
 		Intent i = new Intent(this, ActivityB.class);
-		final EditText editText1 = (EditText)
-                    findViewById(R.id.editText1);
+		final EditText editText1 = findViewById(R.id.editText1);
     	String myString = editText1.getText().toString();
     	i.putExtra("qString", myString);
-    	startActivityForResult(i, request_code);
+    	startActivityForResult(i, REQUEST_CODE);
     }	
 }
